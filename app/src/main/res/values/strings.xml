@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">projeto</string>
+    <string name="ENTRAR">ENTRAR</string>
+    <string name="cadastro">É novo? Crie uma conta CLICANDO AQUI</string>
+    <string name="titulo_cadastro">Cadastre-se!</string>
+    <string name="cadastrar">CADASTRAR</string>
 </resources>
