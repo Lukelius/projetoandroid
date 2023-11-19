@@ -5,6 +5,11 @@
     <string name="titulo_cadastro">Cadastre-se!</string>
     <string name="cadastrar">CADASTRAR</string>
     <string name="title_activity_localizacao">localizacao</string>
+    <string name="porte">Porte</string>
+    <string name="tipoPet">Espécie do Pet</string>
+    <string name="escolhaPet">Escolher o Pet</string>
+    <string name="tipoServico">Tipo de Tosa</string>
+    <string name="tipoVacina">Tipo de Vacina</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

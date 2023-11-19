@@ -42,6 +42,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.Projeto" >
         <activity
+            android:name="com.example.projeto.Vaccine"
+            android:exported="false" />
+        <activity
+            android:name="com.example.projeto.BathGrooming"
+            android:exported="false" />
+        <activity
             android:name="com.example.projeto.PetRegister"
             android:exported="false" />
         <activity

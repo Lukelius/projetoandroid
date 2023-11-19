@@ -23,9 +23,6 @@ public final class ActivityPetRegisterBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final AutoCompleteTextView autoCompleteTxt;
-
-  @NonNull
   public final Button cadastrarPet;
 
   @NonNull
@@ -38,6 +35,9 @@ public final class ActivityPetRegisterBinding implements ViewBinding {
   public final EditText nomePet;
 
   @NonNull
+  public final AutoCompleteTextView portes;
+
+  @NonNull
   public final AutoCompleteTextView tipoPet;
 
   @NonNull
@@ -46,17 +46,16 @@ public final class ActivityPetRegisterBinding implements ViewBinding {
   @NonNull
   public final Button voltarBottao;
 
-  private ActivityPetRegisterBinding(@NonNull LinearLayout rootView,
-      @NonNull AutoCompleteTextView autoCompleteTxt, @NonNull Button cadastrarPet,
+  private ActivityPetRegisterBinding(@NonNull LinearLayout rootView, @NonNull Button cadastrarPet,
       @NonNull TextView cadastro, @NonNull EditText idadePet, @NonNull EditText nomePet,
-      @NonNull AutoCompleteTextView tipoPet, @NonNull TextView vazio,
-      @NonNull Button voltarBottao) {
+      @NonNull AutoCompleteTextView portes, @NonNull AutoCompleteTextView tipoPet,
+      @NonNull TextView vazio, @NonNull Button voltarBottao) {
     this.rootView = rootView;
-    this.autoCompleteTxt = autoCompleteTxt;
     this.cadastrarPet = cadastrarPet;
     this.cadastro = cadastro;
     this.idadePet = idadePet;
     this.nomePet = nomePet;
+    this.portes = portes;
     this.tipoPet = tipoPet;
     this.vazio = vazio;
     this.voltarBottao = voltarBottao;
@@ -89,12 +88,6 @@ public final class ActivityPetRegisterBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.auto_complete_txt;
-      AutoCompleteTextView autoCompleteTxt = ViewBindings.findChildViewById(rootView, id);
-      if (autoCompleteTxt == null) {
-        break missingId;
-      }
-
       id = R.id.cadastrarPet;
       Button cadastrarPet = ViewBindings.findChildViewById(rootView, id);
       if (cadastrarPet == null) {
@@ -119,6 +112,12 @@ public final class ActivityPetRegisterBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.portes;
+      AutoCompleteTextView portes = ViewBindings.findChildViewById(rootView, id);
+      if (portes == null) {
+        break missingId;
+      }
+
       id = R.id.tipoPet;
       AutoCompleteTextView tipoPet = ViewBindings.findChildViewById(rootView, id);
       if (tipoPet == null) {
@@ -137,8 +136,8 @@ public final class ActivityPetRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPetRegisterBinding((LinearLayout) rootView, autoCompleteTxt, cadastrarPet,
-          cadastro, idadePet, nomePet, tipoPet, vazio, voltarBottao);
+      return new ActivityPetRegisterBinding((LinearLayout) rootView, cadastrarPet, cadastro,
+          idadePet, nomePet, portes, tipoPet, vazio, voltarBottao);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
