@@ -8,8 +8,8 @@
         "source": "C:\\Users\\Pablo\\.gradle\\daemon\\8.0\\com.example.projeto.app-main-33:\\layout\\activity_home.xml"
     },
     {
-        "merged": "C:\\Users\\Pablo\\.gradle\\daemon\\8.0\\com.example.projeto.app-mergeDebugResources-30:\\layout\\fragment_home.xml",
-        "source": "C:\\Users\\Pablo\\.gradle\\daemon\\8.0\\com.example.projeto.app-main-33:\\layout\\fragment_home.xml"
+        "merged": "C:\\Users\\Pablo\\.gradle\\daemon\\8.0\\com.example.projeto.app-mergeDebugResources-30:\\layout\\activity_bath_grooming.xml",
+        "source": "C:\\Users\\Pablo\\.gradle\\daemon\\8.0\\com.example.projeto.app-main-33:\\layout\\activity_bath_grooming.xml"
     },
     {
         "merged": "C:\\Users\\Pablo\\.gradle\\daemon\\8.0\\com.example.projeto.app-mergeDebugResources-30:\\layout\\activity_form_login.xml",
@@ -20,12 +20,12 @@
         "source": "C:\\Users\\Pablo\\.gradle\\daemon\\8.0\\com.example.projeto.app-main-33:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Pablo\\.gradle\\daemon\\8.0\\com.example.projeto.app-mergeDebugResources-30:\\layout\\fragment_profile.xml",
-        "source": "C:\\Users\\Pablo\\.gradle\\daemon\\8.0\\com.example.projeto.app-main-33:\\layout\\fragment_profile.xml"
+        "merged": "com.example.projeto.app-mergeDebugResources-30:/layout/activity_bath_grooming.xml",
+        "source": "com.example.projeto.app-main-33:/layout/activity_bath_grooming.xml"
     },
     {
-        "merged": "com.example.projeto.app-mergeDebugResources-30:/layout/activity_profile.xml",
-        "source": "com.example.projeto.app-main-33:/layout/activity_profile.xml"
+        "merged": "C:\\Users\\Pablo\\.gradle\\daemon\\8.0\\com.example.projeto.app-mergeDebugResources-30:\\layout\\activity_vaccine.xml",
+        "source": "C:\\Users\\Pablo\\.gradle\\daemon\\8.0\\com.example.projeto.app-main-33:\\layout\\activity_vaccine.xml"
     },
     {
         "merged": "C:\\Users\\Pablo\\.gradle\\daemon\\8.0\\com.example.projeto.app-mergeDebugResources-30:\\layout\\activity_pet_register.xml",

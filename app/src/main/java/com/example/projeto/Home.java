@@ -10,14 +10,14 @@ import android.widget.Button;
 public class Home extends AppCompatActivity {
 
     Button homeProfile;
-
+    Button homeBath;
+    Button homeVaccine;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
         homeProfile = findViewById(R.id.buttonProfile);
-
         homeProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -26,6 +26,26 @@ public class Home extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        homeBath = findViewById(R.id.buttonBath);
+        homeBath.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this, BathGrooming.class);
+                startActivity(intent);
+            }
+        });
+
+        homeVaccine = findViewById(R.id.buttonVacines);
+        homeVaccine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this, Vaccine.class);
+                startActivity(intent);
+            }
+        });
+
+
 
     }
 }

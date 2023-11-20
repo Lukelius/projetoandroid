@@ -54,43 +54,34 @@
                 android:background="@drawable/costum_edittext"
                 android:drawablePadding="9dp"
                 android:hint="Nome do Pet"
-                android:padding="10dp"
+                android:paddingLeft="17dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background"
                 android:layout_marginTop="20dp"/>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:hint="Tipo do Pet"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
                 <AutoCompleteTextView
-                    android:id="@+id/tipoPet"
+                android:id="@+id/tipoPet"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/tipoPet"
                     android:background="@drawable/costum_edittext"
-                    android:padding="10dp"
+                    android:paddingLeft="17dp"
                     android:textColorHighlight="@color/cardview_dark_background"
                     android:inputType="none"/>
-            </com.google.android.material.textfield.TextInputLayout>
 
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:hint="Porte"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
                 <AutoCompleteTextView
-                    android:id="@+id/auto_complete_txt"
+                    android:id="@+id/portes"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/porte"
                     android:background="@drawable/costum_edittext"
-                    android:padding="10dp"
+                    android:paddingLeft="17dp"
                     android:textColorHighlight="@color/cardview_dark_background"
                     android:inputType="none"/>
-            </com.google.android.material.textfield.TextInputLayout>
 
 
             <EditText

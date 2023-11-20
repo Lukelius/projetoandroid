@@ -25,10 +25,10 @@ com.example.projeto.app-lifecycle-viewmodel-2.5.1-23 C:\Users\Pablo\.gradle\cach
 com.example.projeto.app-appcompat-1.6.1-24 C:\Users\Pablo\.gradle\caches\transforms-3\c614d7e5e773a015d618e5402bd724c1\transformed\appcompat-1.6.1\res
 com.example.projeto.app-savedstate-1.2.0-25 C:\Users\Pablo\.gradle\caches\transforms-3\cd2dfc61e9afedd6772d0ab3eb179c71\transformed\savedstate-1.2.0\res
 com.example.projeto.app-play-services-maps-18.1.0-26 C:\Users\Pablo\.gradle\caches\transforms-3\de8a7718f57ce79b229466572e8231b6\transformed\play-services-maps-18.1.0\res
-com.example.projeto.app-pngs-27 C:\Users\Pablo\Desktop\PetShop\projetoandroid\app\build\generated\res\pngs\debug
-com.example.projeto.app-resValues-28 C:\Users\Pablo\Desktop\PetShop\projetoandroid\app\build\generated\res\resValues\debug
-com.example.projeto.app-packageDebugResources-29 C:\Users\Pablo\Desktop\PetShop\projetoandroid\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.projeto.app-packageDebugResources-30 C:\Users\Pablo\Desktop\PetShop\projetoandroid\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.projeto.app-merged_res-31 C:\Users\Pablo\Desktop\PetShop\projetoandroid\app\build\intermediates\merged_res\debug
-com.example.projeto.app-debug-32 C:\Users\Pablo\Desktop\PetShop\projetoandroid\app\src\debug\res
-com.example.projeto.app-main-33 C:\Users\Pablo\Desktop\PetShop\projetoandroid\app\src\main\res
+com.example.projeto.app-pngs-27 C:\Users\Pablo\Desktop\PetShop\app\build\generated\res\pngs\debug
+com.example.projeto.app-resValues-28 C:\Users\Pablo\Desktop\PetShop\app\build\generated\res\resValues\debug
+com.example.projeto.app-packageDebugResources-29 C:\Users\Pablo\Desktop\PetShop\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.projeto.app-packageDebugResources-30 C:\Users\Pablo\Desktop\PetShop\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.projeto.app-merged_res-31 C:\Users\Pablo\Desktop\PetShop\app\build\intermediates\merged_res\debug
+com.example.projeto.app-debug-32 C:\Users\Pablo\Desktop\PetShop\app\src\debug\res
+com.example.projeto.app-main-33 C:\Users\Pablo\Desktop\PetShop\app\src\main\res

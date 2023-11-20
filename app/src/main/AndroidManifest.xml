@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Projeto"
         tools:targetApi="31">
         <activity
+            android:name=".Vaccine"
+            android:exported="false" />
+        <activity
+            android:name=".BathGrooming"
+            android:exported="false" />
+        <activity
             android:name=".PetRegister"
             android:exported="false" />
         <activity
@@ -21,9 +27,7 @@
         <activity
             android:name=".Home"
             android:exported="false" />
-        <activity
-            android:name=".TesteLogin"
-            android:exported="false" />
+
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -39,10 +43,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="YOUR_API_KEY" />
 
-        <activity
-            android:name=".localizacao"
-            android:exported="false"
-            android:label="@string/title_activity_localizacao" />
+
         <activity
             android:name=".form_cadastro"
             android:exported="false" />
