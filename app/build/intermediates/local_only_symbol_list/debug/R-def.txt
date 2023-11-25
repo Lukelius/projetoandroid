@@ -8,6 +8,7 @@ drawable button
 drawable comb_icon
 drawable containercomponents
 drawable costum_edittext
+drawable cpf
 drawable edit_text
 drawable email
 drawable fundo
@@ -61,6 +62,7 @@ id imageView3
 id imageView4
 id imageView7
 id logo
+id map
 id marca
 id nome
 id nomePet
@@ -89,10 +91,12 @@ layout activity_bath_grooming
 layout activity_form_cadastro
 layout activity_form_login
 layout activity_home
+layout activity_localizacao
 layout activity_main
 layout activity_pet_register
 layout activity_profile
 layout activity_vaccine
+layout form_localizacao
 menu menu_bathgrooming
 menu menu_popup
 menu menu_tipos
