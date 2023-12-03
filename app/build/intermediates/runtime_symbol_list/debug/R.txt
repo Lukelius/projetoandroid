@@ -3476,6 +3476,10 @@ int id peekHeight 0x7f08017c
 int id percent 0x7f08017d
 int id perfilTxt 0x7f08017e
 int id petChoice 0x7f08017f
+int id petData 0x7f080248
+int id petNome 0x7f080246
+int id petTipo 0x7f08023e
+int id petTitle 0x7f080247
 int id pets 0x7f080180
 int id pin 0x7f080181
 int id porteGrande 0x7f080182
@@ -3544,6 +3548,7 @@ int id selection_type 0x7f0801bb
 int id senha2 0x7f0801bd
 int id senhaLogin 0x7f08023b
 int id serviceType 0x7f0801be
+int id servico 0x7f080249
 int id sharedValueSet 0x7f0801bf
 int id sharedValueUnset 0x7f0801c0
 int id shortcut 0x7f0801c1
@@ -3644,6 +3649,7 @@ int id useLogo 0x7f08021f
 int id userName 0x7f080220
 int id usernameReg 0x7f08023c
 int id vaccineTxT 0x7f080221
+int id vacina1 0x7f08024a
 int id vazio 0x7f080222
 int id vertical_only 0x7f080223
 int id view_offset_helper 0x7f080224
@@ -3785,6 +3791,7 @@ int layout activity_form_cadastro 0x7f0b001e
 int layout activity_form_login 0x7f0b001f
 int layout activity_home 0x7f0b0020
 int layout activity_main 0x7f0b0021
+int layout activity_pet_profile 0x7f0b0076
 int layout activity_pet_register 0x7f0b0022
 int layout activity_profile 0x7f0b0024
 int layout activity_vaccine 0x7f0b0025

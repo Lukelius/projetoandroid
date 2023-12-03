@@ -26,6 +26,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
+
 public class PetRegister extends AppCompatActivity {
 
     ActivityMainBinding binding;
@@ -34,7 +36,7 @@ public class PetRegister extends AppCompatActivity {
     AutoCompleteTextView tipos, dataNascimento, portes;
     FirebaseDatabase database;
     DatabaseReference reference;
-
+    private ArrayList<PetData> pets = new ArrayList<PetData>();
 
 
     int petId = 0;
@@ -159,6 +161,8 @@ public class PetRegister extends AppCompatActivity {
         String petPort = portes.getText().toString();
         String petAge = dataNascimento.getText().toString();
         PetData petData = new PetData(gerarPetId(), petName, petType, petPort, petAge);
+        pets.add(petData);
+
         reference.child("fifo").child("Pets").child(petName).setValue(petData).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
@@ -167,6 +171,7 @@ public class PetRegister extends AppCompatActivity {
                 tipos.setText(petType);
                 portes.setText(petPort);
                 dataNascimento.setText(petAge);
+                Intent intent = new Intent(PetRegister.this, PetProfile.class);
                 Toast.makeText(PetRegister.this, "Pet cadastrado com sucesso!", Toast.LENGTH_SHORT).show();
                 finish();
 
@@ -174,6 +179,7 @@ public class PetRegister extends AppCompatActivity {
         });
 
     }
+
 
 
     public int gerarPetId() {

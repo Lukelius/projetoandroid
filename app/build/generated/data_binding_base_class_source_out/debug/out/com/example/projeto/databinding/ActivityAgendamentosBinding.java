@@ -4,25 +4,56 @@ package com.example.projeto.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AutoCompleteTextView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.projeto.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class ActivityAgendamentosBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final LinearLayout rootView;
 
-  private ActivityAgendamentosBinding(@NonNull ConstraintLayout rootView) {
+  @NonNull
+  public final AutoCompleteTextView petData;
+
+  @NonNull
+  public final AutoCompleteTextView petNome;
+
+  @NonNull
+  public final AutoCompleteTextView petTipo;
+
+  @NonNull
+  public final TextView petTitle;
+
+  @NonNull
+  public final AutoCompleteTextView servico;
+
+  @NonNull
+  public final AutoCompleteTextView vacina1;
+
+  private ActivityAgendamentosBinding(@NonNull LinearLayout rootView,
+      @NonNull AutoCompleteTextView petData, @NonNull AutoCompleteTextView petNome,
+      @NonNull AutoCompleteTextView petTipo, @NonNull TextView petTitle,
+      @NonNull AutoCompleteTextView servico, @NonNull AutoCompleteTextView vacina1) {
     this.rootView = rootView;
+    this.petData = petData;
+    this.petNome = petNome;
+    this.petTipo = petTipo;
+    this.petTitle = petTitle;
+    this.servico = servico;
+    this.vacina1 = vacina1;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -43,10 +74,50 @@ public final class ActivityAgendamentosBinding implements ViewBinding {
 
   @NonNull
   public static ActivityAgendamentosBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.petData;
+      AutoCompleteTextView petData = ViewBindings.findChildViewById(rootView, id);
+      if (petData == null) {
+        break missingId;
+      }
 
-    return new ActivityAgendamentosBinding((ConstraintLayout) rootView);
+      id = R.id.petNome;
+      AutoCompleteTextView petNome = ViewBindings.findChildViewById(rootView, id);
+      if (petNome == null) {
+        break missingId;
+      }
+
+      id = R.id.petTipo;
+      AutoCompleteTextView petTipo = ViewBindings.findChildViewById(rootView, id);
+      if (petTipo == null) {
+        break missingId;
+      }
+
+      id = R.id.petTitle;
+      TextView petTitle = ViewBindings.findChildViewById(rootView, id);
+      if (petTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.servico;
+      AutoCompleteTextView servico = ViewBindings.findChildViewById(rootView, id);
+      if (servico == null) {
+        break missingId;
+      }
+
+      id = R.id.vacina1;
+      AutoCompleteTextView vacina1 = ViewBindings.findChildViewById(rootView, id);
+      if (vacina1 == null) {
+        break missingId;
+      }
+
+      return new ActivityAgendamentosBinding((LinearLayout) rootView, petData, petNome, petTipo,
+          petTitle, servico, vacina1);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

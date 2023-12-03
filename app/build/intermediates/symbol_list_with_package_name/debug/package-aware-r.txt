@@ -3477,6 +3477,10 @@ id peekHeight
 id percent
 id perfilTxt
 id petChoice
+id petData
+id petNome
+id petTipo
+id petTitle
 id pets
 id pin
 id porteGrande
@@ -3545,6 +3549,7 @@ id selection_type
 id senha2
 id senhaLogin
 id serviceType
+id servico
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3645,6 +3650,7 @@ id useLogo
 id userName
 id usernameReg
 id vaccineTxT
+id vacina1
 id vazio
 id vertical_only
 id view_offset_helper
@@ -3786,6 +3792,7 @@ layout activity_form_cadastro
 layout activity_form_login
 layout activity_home
 layout activity_main
+layout activity_pet_profile
 layout activity_pet_register
 layout activity_profile
 layout activity_vaccine

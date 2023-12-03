@@ -45,6 +45,13 @@ public class Profile extends AppCompatActivity {
         });
 
         pets = findViewById(R.id.pets);
+        pets.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Profile.this, PetProfile.class);
+                startActivity(intent);
+            }
+        });
 
 
         user = findViewById(R.id.userName);

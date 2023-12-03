@@ -66,6 +66,10 @@ id nome
 id nomePet
 id perfilTxt
 id petChoice
+id petData
+id petNome
+id petTipo
+id petTitle
 id pets
 id porteGrande
 id porteMedio
@@ -80,6 +84,7 @@ id recTitle
 id senha2
 id senhaLogin
 id serviceType
+id servico
 id text_tela_cadastro
 id tipoCao
 id tipoGato
@@ -90,6 +95,7 @@ id type3
 id userName
 id usernameReg
 id vaccineTxT
+id vacina1
 id vazio
 id voltarBottao
 layout activity_agendamentos
@@ -98,6 +104,7 @@ layout activity_form_cadastro
 layout activity_form_login
 layout activity_home
 layout activity_main
+layout activity_pet_profile
 layout activity_pet_register
 layout activity_profile
 layout activity_vaccine
