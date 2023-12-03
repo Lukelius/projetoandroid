@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "28081760663",
+    "project_id": "macapet-4a925",
+    "storage_bucket": "macapet-4a925.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28081760663:android:0db204b006bc93dcb9bcd2",
+        "android_client_info": {
+          "package_name": "com.example.projeto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBu521B0qDJpzc5-3PEq3V7yWaCvx8BVGM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

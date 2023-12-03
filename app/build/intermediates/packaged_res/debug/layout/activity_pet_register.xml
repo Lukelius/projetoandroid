@@ -47,7 +47,7 @@
                 android:textColor="@color/dark_blue"/>
 
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:id="@+id/nomePet"
@@ -84,17 +84,17 @@
                     android:inputType="none"/>
 
 
-            <EditText
+            <AutoCompleteTextView
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:id="@+id/idadePet"
+                android:id="@+id/dtNasc"
                 android:background="@drawable/costum_edittext"
                 android:paddingLeft="17dp"
-                android:inputType="number"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background"
                 android:layout_marginTop="20dp"
-                android:hint="Idade"/>
+                android:hint="Data de Nascimento"
+                android:inputType="none"/>
 
             <Button
                 android:layout_width="match_parent"

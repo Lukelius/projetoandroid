@@ -7,17 +7,23 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
+import android.widget.Button;
 import android.widget.CheckedTextView;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.PopupMenu;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Vaccine extends AppCompatActivity {
 
-    AutoCompleteTextView vaccine;
-    AutoCompleteTextView agendaDiaVacina;
-
+    AutoCompleteTextView vaccine, petVacina, agendaDiaVacina;
+    Button agendar;
+    FirebaseDatabase database;
+    DatabaseReference reference;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +67,26 @@ public class Vaccine extends AppCompatActivity {
             public void onClick(View view) {
 
                 openDialog();
+
+            }
+        });
+
+        petVacina = findViewById(R.id.petChoice);
+
+        agendar = findViewById(R.id.buttonAgendarVacina);
+        agendar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                database = FirebaseDatabase.getInstance();
+                reference = database.getReference("users");
+                String petName = petVacina.getText().toString();
+                String vacinaTipo = vaccine.getText().toString();
+                String dia = agendaDiaVacina.getText().toString();
+                String servico = "Vacinação";
+                VaccineData vaccineData = new VaccineData(petName, vacinaTipo, dia, servico);
+                reference.child("fifo").child("Services").child(servico).setValue(vaccineData);
+                Toast.makeText(Vaccine.this, "Vacinação Agendada com sucesso", Toast.LENGTH_SHORT).show();
+                finish();
 
             }
         });

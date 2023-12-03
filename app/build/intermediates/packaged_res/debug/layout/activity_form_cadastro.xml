@@ -47,11 +47,10 @@
         app:layout_constraintTop_toTopOf="@id/componentes" />
 
     <EditText
-        android:id="@+id/cpf"
+        android:id="@+id/usernameReg"
         style="@style/edit_text"
         android:layout_marginTop="80dp"
-        android:hint="CPF"
-        android:inputType="number"
+        android:hint="Nome de Usuário"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="@id/nome"
         app:layout_constraintHorizontal_bias="1.0"
@@ -93,6 +92,8 @@
         />
 
 
+
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
@@ -102,6 +103,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="487dp" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1374,6 +1374,10 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
+color browser_actions_bg_grey
+color browser_actions_divider_color
+color browser_actions_text_color
+color browser_actions_title_color
 color button_material_dark
 color button_material_light
 color cardview_dark_background
@@ -2170,6 +2174,8 @@ dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen appcompat_dialog_background_inset
+dimen browser_actions_context_menu_max_width
+dimen browser_actions_context_menu_min_padding
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -3164,7 +3170,7 @@ id adjust_width
 id agendaBanhoTosa
 id agendaVacina
 id agendamento
-id agendarServico
+id agendarBanho
 id alertTitle
 id aligned
 id all
@@ -3195,6 +3201,11 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id browser_actions_header_text
+id browser_actions_menu_item_icon
+id browser_actions_menu_item_text
+id browser_actions_menu_items
+id browser_actions_menu_view
 id buttonAgendarVacina
 id buttonBath
 id buttonLocation
@@ -3203,6 +3214,7 @@ id buttonProducts
 id buttonProfile
 id buttonToRegister
 id buttonVacines
+id button_agendamentos
 id button_cadastrar
 id button_entrar
 id cache_measures
@@ -3244,7 +3256,6 @@ id continuousVelocity
 id coordinator
 id cos
 id counterclockwise
-id cpf
 id cradle
 id currentState
 id custom
@@ -3280,6 +3291,7 @@ id dragRight
 id dragStart
 id dragUp
 id dropdown_menu
+id dtNasc
 id easeIn
 id easeInOut
 id easeOut
@@ -3287,8 +3299,8 @@ id east
 id edge
 id edit_query
 id elastic
-id email
 id email2
+id emailLogin
 id embed
 id end
 id endToStart
@@ -3316,6 +3328,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3334,7 +3347,6 @@ id hybrid
 id icon
 id icon_group
 id icon_only
-id idadePet
 id ifRoom
 id ignore
 id ignoreRequest
@@ -3465,6 +3477,7 @@ id peekHeight
 id percent
 id perfilTxt
 id petChoice
+id pets
 id pin
 id porteGrande
 id porteMedio
@@ -3478,6 +3491,11 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id recCard
+id recDesc
+id recImage
+id recPriority
+id recTitle
 id rectangles
 id reverseSawtooth
 id right
@@ -3524,8 +3542,8 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
-id senha
 id senha2
+id senhaLogin
 id serviceType
 id sharedValueSet
 id sharedValueUnset
@@ -3625,6 +3643,7 @@ id unlabeled
 id up
 id useLogo
 id userName
+id usernameReg
 id vaccineTxT
 id vazio
 id vertical_only
@@ -3761,6 +3780,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_agendamentos
 layout activity_bath_grooming
 layout activity_form_cadastro
 layout activity_form_login
@@ -3769,6 +3789,8 @@ layout activity_main
 layout activity_pet_register
 layout activity_profile
 layout activity_vaccine
+layout browser_actions_context_menu_page
+layout browser_actions_context_menu_row
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3842,6 +3864,8 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout progress_layout
+layout recycler_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -3853,6 +3877,7 @@ menu menu_vaccine
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw firebase_common_keep
 string ENTRAR
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -3914,12 +3939,21 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string copy_toast_msg
 string error_a11y_label
 string error_icon_content_description
 string escolhaPet
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string fallback_menu_item_copy_link
+string fallback_menu_item_open_in_browser
+string fallback_menu_item_share_link
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
@@ -4029,6 +4063,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string porte
+string project_id
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
@@ -5306,3 +5341,4 @@ styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration
 styleable include constraintSet
 xml backup_rules
 xml data_extraction_rules
+xml image_share_filepaths

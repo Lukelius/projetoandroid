@@ -4,6 +4,7 @@ package com.example.projeto.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -22,6 +23,9 @@ public final class ActivityProfileBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
+  public final Button buttonAgendamentos;
+
+  @NonNull
   public final FloatingActionButton buttonToRegister;
 
   @NonNull
@@ -34,20 +38,25 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final TextView perfilTxt;
 
   @NonNull
+  public final Button pets;
+
+  @NonNull
   public final FrameLayout profile;
 
   @NonNull
   public final TextView userName;
 
-  private ActivityProfileBinding(@NonNull FrameLayout rootView,
+  private ActivityProfileBinding(@NonNull FrameLayout rootView, @NonNull Button buttonAgendamentos,
       @NonNull FloatingActionButton buttonToRegister, @NonNull ImageView imageView7,
-      @NonNull ImageView marca, @NonNull TextView perfilTxt, @NonNull FrameLayout profile,
-      @NonNull TextView userName) {
+      @NonNull ImageView marca, @NonNull TextView perfilTxt, @NonNull Button pets,
+      @NonNull FrameLayout profile, @NonNull TextView userName) {
     this.rootView = rootView;
+    this.buttonAgendamentos = buttonAgendamentos;
     this.buttonToRegister = buttonToRegister;
     this.imageView7 = imageView7;
     this.marca = marca;
     this.perfilTxt = perfilTxt;
+    this.pets = pets;
     this.profile = profile;
     this.userName = userName;
   }
@@ -79,6 +88,12 @@ public final class ActivityProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.button_agendamentos;
+      Button buttonAgendamentos = ViewBindings.findChildViewById(rootView, id);
+      if (buttonAgendamentos == null) {
+        break missingId;
+      }
+
       id = R.id.buttonToRegister;
       FloatingActionButton buttonToRegister = ViewBindings.findChildViewById(rootView, id);
       if (buttonToRegister == null) {
@@ -103,6 +118,12 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.pets;
+      Button pets = ViewBindings.findChildViewById(rootView, id);
+      if (pets == null) {
+        break missingId;
+      }
+
       FrameLayout profile = (FrameLayout) rootView;
 
       id = R.id.userName;
@@ -111,8 +132,8 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityProfileBinding((FrameLayout) rootView, buttonToRegister, imageView7, marca,
-          perfilTxt, profile, userName);
+      return new ActivityProfileBinding((FrameLayout) rootView, buttonAgendamentos,
+          buttonToRegister, imageView7, marca, perfilTxt, pets, profile, userName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

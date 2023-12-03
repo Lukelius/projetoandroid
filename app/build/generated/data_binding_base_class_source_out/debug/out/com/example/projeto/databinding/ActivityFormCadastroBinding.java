@@ -32,9 +32,6 @@ public final class ActivityFormCadastroBinding implements ViewBinding {
   public final View componentes;
 
   @NonNull
-  public final EditText cpf;
-
-  @NonNull
   public final EditText email2;
 
   @NonNull
@@ -46,19 +43,22 @@ public final class ActivityFormCadastroBinding implements ViewBinding {
   @NonNull
   public final EditText senha2;
 
+  @NonNull
+  public final EditText usernameReg;
+
   private ActivityFormCadastroBinding(@NonNull ConstraintLayout rootView,
       @NonNull AppCompatButton buttonCadastrar, @NonNull TextView cadastrarse,
-      @NonNull View componentes, @NonNull EditText cpf, @NonNull EditText email2,
-      @NonNull ImageView imageView, @NonNull EditText nome, @NonNull EditText senha2) {
+      @NonNull View componentes, @NonNull EditText email2, @NonNull ImageView imageView,
+      @NonNull EditText nome, @NonNull EditText senha2, @NonNull EditText usernameReg) {
     this.rootView = rootView;
     this.buttonCadastrar = buttonCadastrar;
     this.cadastrarse = cadastrarse;
     this.componentes = componentes;
-    this.cpf = cpf;
     this.email2 = email2;
     this.imageView = imageView;
     this.nome = nome;
     this.senha2 = senha2;
+    this.usernameReg = usernameReg;
   }
 
   @Override
@@ -106,12 +106,6 @@ public final class ActivityFormCadastroBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.cpf;
-      EditText cpf = ViewBindings.findChildViewById(rootView, id);
-      if (cpf == null) {
-        break missingId;
-      }
-
       id = R.id.email2;
       EditText email2 = ViewBindings.findChildViewById(rootView, id);
       if (email2 == null) {
@@ -136,8 +130,14 @@ public final class ActivityFormCadastroBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.usernameReg;
+      EditText usernameReg = ViewBindings.findChildViewById(rootView, id);
+      if (usernameReg == null) {
+        break missingId;
+      }
+
       return new ActivityFormCadastroBinding((ConstraintLayout) rootView, buttonCadastrar,
-          cadastrarse, componentes, cpf, email2, imageView, nome, senha2);
+          cadastrarse, componentes, email2, imageView, nome, senha2, usernameReg);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

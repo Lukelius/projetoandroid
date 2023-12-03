@@ -39,27 +39,27 @@ public final class ActivityFormLoginBinding implements ViewBinding {
   public final ConstraintLayout container;
 
   @NonNull
-  public final EditText email;
+  public final EditText emailLogin;
 
   @NonNull
   public final ImageView logo;
 
   @NonNull
-  public final EditText senha;
+  public final EditText senhaLogin;
 
   private ActivityFormLoginBinding(@NonNull ConstraintLayout rootView, @NonNull ProgressBar barra,
       @NonNull AppCompatButton buttonEntrar, @NonNull TextView cadastrar, @NonNull View components,
-      @NonNull ConstraintLayout container, @NonNull EditText email, @NonNull ImageView logo,
-      @NonNull EditText senha) {
+      @NonNull ConstraintLayout container, @NonNull EditText emailLogin, @NonNull ImageView logo,
+      @NonNull EditText senhaLogin) {
     this.rootView = rootView;
     this.barra = barra;
     this.buttonEntrar = buttonEntrar;
     this.cadastrar = cadastrar;
     this.components = components;
     this.container = container;
-    this.email = email;
+    this.emailLogin = emailLogin;
     this.logo = logo;
-    this.senha = senha;
+    this.senhaLogin = senhaLogin;
   }
 
   @Override
@@ -115,9 +115,9 @@ public final class ActivityFormLoginBinding implements ViewBinding {
 
       ConstraintLayout container = (ConstraintLayout) rootView;
 
-      id = R.id.email;
-      EditText email = ViewBindings.findChildViewById(rootView, id);
-      if (email == null) {
+      id = R.id.emailLogin;
+      EditText emailLogin = ViewBindings.findChildViewById(rootView, id);
+      if (emailLogin == null) {
         break missingId;
       }
 
@@ -127,14 +127,14 @@ public final class ActivityFormLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.senha;
-      EditText senha = ViewBindings.findChildViewById(rootView, id);
-      if (senha == null) {
+      id = R.id.senhaLogin;
+      EditText senhaLogin = ViewBindings.findChildViewById(rootView, id);
+      if (senhaLogin == null) {
         break missingId;
       }
 
       return new ActivityFormLoginBinding((ConstraintLayout) rootView, barra, buttonEntrar,
-          cadastrar, components, container, email, logo, senha);
+          cadastrar, components, container, emailLogin, logo, senhaLogin);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

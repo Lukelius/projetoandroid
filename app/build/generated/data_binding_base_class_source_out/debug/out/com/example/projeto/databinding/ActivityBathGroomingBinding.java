@@ -29,7 +29,7 @@ public final class ActivityBathGroomingBinding implements ViewBinding {
   public final TextView agendamento;
 
   @NonNull
-  public final Button agendarServico;
+  public final Button agendarBanho;
 
   @NonNull
   public final TextView bathGrooming;
@@ -45,12 +45,12 @@ public final class ActivityBathGroomingBinding implements ViewBinding {
 
   private ActivityBathGroomingBinding(@NonNull FrameLayout rootView,
       @NonNull AutoCompleteTextView agendaBanhoTosa, @NonNull TextView agendamento,
-      @NonNull Button agendarServico, @NonNull TextView bathGrooming, @NonNull ImageView imageView3,
+      @NonNull Button agendarBanho, @NonNull TextView bathGrooming, @NonNull ImageView imageView3,
       @NonNull AutoCompleteTextView petChoice, @NonNull AutoCompleteTextView serviceType) {
     this.rootView = rootView;
     this.agendaBanhoTosa = agendaBanhoTosa;
     this.agendamento = agendamento;
-    this.agendarServico = agendarServico;
+    this.agendarBanho = agendarBanho;
     this.bathGrooming = bathGrooming;
     this.imageView3 = imageView3;
     this.petChoice = petChoice;
@@ -96,9 +96,9 @@ public final class ActivityBathGroomingBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.agendarServico;
-      Button agendarServico = ViewBindings.findChildViewById(rootView, id);
-      if (agendarServico == null) {
+      id = R.id.agendarBanho;
+      Button agendarBanho = ViewBindings.findChildViewById(rootView, id);
+      if (agendarBanho == null) {
         break missingId;
       }
 
@@ -127,7 +127,7 @@ public final class ActivityBathGroomingBinding implements ViewBinding {
       }
 
       return new ActivityBathGroomingBinding((FrameLayout) rootView, agendaBanhoTosa, agendamento,
-          agendarServico, bathGrooming, imageView3, petChoice, serviceType);
+          agendarBanho, bathGrooming, imageView3, petChoice, serviceType);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

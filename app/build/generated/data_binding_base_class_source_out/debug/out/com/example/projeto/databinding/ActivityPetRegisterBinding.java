@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -14,6 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.projeto.R;
+import com.google.android.material.textfield.TextInputEditText;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -29,10 +29,10 @@ public final class ActivityPetRegisterBinding implements ViewBinding {
   public final TextView cadastro;
 
   @NonNull
-  public final EditText idadePet;
+  public final AutoCompleteTextView dtNasc;
 
   @NonNull
-  public final EditText nomePet;
+  public final TextInputEditText nomePet;
 
   @NonNull
   public final AutoCompleteTextView portes;
@@ -47,13 +47,14 @@ public final class ActivityPetRegisterBinding implements ViewBinding {
   public final Button voltarBottao;
 
   private ActivityPetRegisterBinding(@NonNull LinearLayout rootView, @NonNull Button cadastrarPet,
-      @NonNull TextView cadastro, @NonNull EditText idadePet, @NonNull EditText nomePet,
-      @NonNull AutoCompleteTextView portes, @NonNull AutoCompleteTextView tipoPet,
-      @NonNull TextView vazio, @NonNull Button voltarBottao) {
+      @NonNull TextView cadastro, @NonNull AutoCompleteTextView dtNasc,
+      @NonNull TextInputEditText nomePet, @NonNull AutoCompleteTextView portes,
+      @NonNull AutoCompleteTextView tipoPet, @NonNull TextView vazio,
+      @NonNull Button voltarBottao) {
     this.rootView = rootView;
     this.cadastrarPet = cadastrarPet;
     this.cadastro = cadastro;
-    this.idadePet = idadePet;
+    this.dtNasc = dtNasc;
     this.nomePet = nomePet;
     this.portes = portes;
     this.tipoPet = tipoPet;
@@ -100,14 +101,14 @@ public final class ActivityPetRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.idadePet;
-      EditText idadePet = ViewBindings.findChildViewById(rootView, id);
-      if (idadePet == null) {
+      id = R.id.dtNasc;
+      AutoCompleteTextView dtNasc = ViewBindings.findChildViewById(rootView, id);
+      if (dtNasc == null) {
         break missingId;
       }
 
       id = R.id.nomePet;
-      EditText nomePet = ViewBindings.findChildViewById(rootView, id);
+      TextInputEditText nomePet = ViewBindings.findChildViewById(rootView, id);
       if (nomePet == null) {
         break missingId;
       }
@@ -136,8 +137,8 @@ public final class ActivityPetRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPetRegisterBinding((LinearLayout) rootView, cadastrarPet, cadastro,
-          idadePet, nomePet, portes, tipoPet, vazio, voltarBottao);
+      return new ActivityPetRegisterBinding((LinearLayout) rootView, cadastrarPet, cadastro, dtNasc,
+          nomePet, portes, tipoPet, vazio, voltarBottao);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -72,6 +72,52 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/marca" />
 
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp"
+                android:background="@drawable/costum_edittext">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="24dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/pets"
+                        android:text="Pets"
+                        android:textSize="18sp"
+                        android:layout_marginTop="30dp"
+                        android:backgroundTint="@color/dark_blue"
+                        app:cornerRadius = "20dp"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/button_agendamentos"
+                        android:text="Agendamentos"
+                        android:textSize="18sp"
+                        android:layout_marginTop="30dp"
+                        android:backgroundTint="@color/dark_blue"
+                        app:cornerRadius = "20dp"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
         <!--<Button
 
             android:layout_width="75dp"
@@ -87,6 +133,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" /> -->
+
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/buttonToRegister"

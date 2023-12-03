@@ -77,7 +77,7 @@
                 android:background="@drawable/costum_edittext"
                 android:paddingLeft="17dp"
                 android:textColorHighlight="@color/cardview_dark_background"
-                android:inputType="none"/>
+                android:inputType="text"/>
 
 
 
