@@ -24,8 +24,16 @@
         "source": "C:\\Users\\Pablo\\.gradle\\daemon\\8.0\\com.example.projeto.app-main-37:\\layout\\activity_main.xml"
     },
     {
+        "merged": "com.example.projeto.app-mergeDebugResources-34:/layout/activity_products.xml",
+        "source": "com.example.projeto.app-main-37:/layout/activity_products.xml"
+    },
+    {
         "merged": "C:\\Users\\Pablo\\.gradle\\daemon\\8.0\\com.example.projeto.app-mergeDebugResources-34:\\layout\\activity_form_login.xml",
         "source": "C:\\Users\\Pablo\\.gradle\\daemon\\8.0\\com.example.projeto.app-main-37:\\layout\\activity_form_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pablo\\.gradle\\daemon\\8.0\\com.example.projeto.app-mergeDebugResources-34:\\layout\\activity_about_us.xml",
+        "source": "C:\\Users\\Pablo\\.gradle\\daemon\\8.0\\com.example.projeto.app-main-37:\\layout\\activity_about_us.xml"
     },
     {
         "merged": "C:\\Users\\Pablo\\.gradle\\daemon\\8.0\\com.example.projeto.app-mergeDebugResources-34:\\layout\\progress_layout.xml",
@@ -42,10 +50,6 @@
     {
         "merged": "C:\\Users\\Pablo\\.gradle\\daemon\\8.0\\com.example.projeto.app-mergeDebugResources-34:\\layout\\activity_bath_grooming.xml",
         "source": "C:\\Users\\Pablo\\.gradle\\daemon\\8.0\\com.example.projeto.app-main-37:\\layout\\activity_bath_grooming.xml"
-    },
-    {
-        "merged": "com.example.projeto.app-mergeDebugResources-34:/layout/activity_agendamentos.xml",
-        "source": "com.example.projeto.app-main-37:/layout/activity_agendamentos.xml"
     },
     {
         "merged": "C:\\Users\\Pablo\\.gradle\\daemon\\8.0\\com.example.projeto.app-mergeDebugResources-34:\\layout\\activity_agendamentos.xml",

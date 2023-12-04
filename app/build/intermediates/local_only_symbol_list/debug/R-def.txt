@@ -1,6 +1,7 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color blue
 color dark_blue
 color white
 drawable baseline_add_24
@@ -24,9 +25,12 @@ drawable perfil
 drawable perfilbanner
 drawable perfilbg
 drawable pet
+drawable racao
 drawable round_button
 drawable vaccine
+id Sobre
 id Vacina
+id aboutPage
 id agendaBanhoTosa
 id agendaVacina
 id agendamento
@@ -34,9 +38,9 @@ id agendarBanho
 id barra
 id bath
 id bathGrooming
+id buttonAbout
 id buttonAgendarVacina
 id buttonBath
-id buttonLocation
 id buttonProducts
 id buttonProfile
 id buttonToRegister
@@ -51,6 +55,12 @@ id cadastro
 id componentes
 id components
 id container
+id containerImg
+id containerImg2
+id containerImg3
+id descricao
+id descricao2
+id descricao3
 id dtNasc
 id email2
 id emailLogin
@@ -63,6 +73,8 @@ id imageView7
 id logo
 id marca
 id nome
+id nome2
+id nome3
 id nomePet
 id perfilTxt
 id petChoice
@@ -75,6 +87,9 @@ id porteGrande
 id porteMedio
 id portePequeno
 id portes
+id preco
+id preco2
+id preco3
 id profile
 id recCard
 id recDesc
@@ -97,7 +112,11 @@ id usernameReg
 id vaccineTxT
 id vacina1
 id vazio
+id view
+id view2
+id view3
 id voltarBottao
+layout activity_about_us
 layout activity_agendamentos
 layout activity_bath_grooming
 layout activity_form_cadastro
@@ -106,6 +125,7 @@ layout activity_home
 layout activity_main
 layout activity_pet_profile
 layout activity_pet_register
+layout activity_products
 layout activity_profile
 layout activity_vaccine
 layout progress_layout
@@ -117,6 +137,7 @@ menu menu_vaccine
 mipmap ic_launcher
 mipmap ic_launcher_round
 string ENTRAR
+string aboutUs
 string app_name
 string cadastrar
 string cadastro
@@ -134,6 +155,7 @@ string tipoServico
 string tipoVacina
 string title_activity_localizacao
 string titulo_cadastro
+string welcome
 style Base.Theme.Projeto
 style ContainerComponents
 style ContainerComponents2

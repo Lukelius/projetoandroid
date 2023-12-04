@@ -20,10 +20,10 @@ public final class ActivityHomeBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
-  public final Button buttonBath;
+  public final Button buttonAbout;
 
   @NonNull
-  public final Button buttonLocation;
+  public final Button buttonBath;
 
   @NonNull
   public final Button buttonProducts;
@@ -37,12 +37,12 @@ public final class ActivityHomeBinding implements ViewBinding {
   @NonNull
   public final FrameLayout homePage;
 
-  private ActivityHomeBinding(@NonNull FrameLayout rootView, @NonNull Button buttonBath,
-      @NonNull Button buttonLocation, @NonNull Button buttonProducts, @NonNull Button buttonProfile,
+  private ActivityHomeBinding(@NonNull FrameLayout rootView, @NonNull Button buttonAbout,
+      @NonNull Button buttonBath, @NonNull Button buttonProducts, @NonNull Button buttonProfile,
       @NonNull Button buttonVacines, @NonNull FrameLayout homePage) {
     this.rootView = rootView;
+    this.buttonAbout = buttonAbout;
     this.buttonBath = buttonBath;
-    this.buttonLocation = buttonLocation;
     this.buttonProducts = buttonProducts;
     this.buttonProfile = buttonProfile;
     this.buttonVacines = buttonVacines;
@@ -76,15 +76,15 @@ public final class ActivityHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.buttonBath;
-      Button buttonBath = ViewBindings.findChildViewById(rootView, id);
-      if (buttonBath == null) {
+      id = R.id.buttonAbout;
+      Button buttonAbout = ViewBindings.findChildViewById(rootView, id);
+      if (buttonAbout == null) {
         break missingId;
       }
 
-      id = R.id.buttonLocation;
-      Button buttonLocation = ViewBindings.findChildViewById(rootView, id);
-      if (buttonLocation == null) {
+      id = R.id.buttonBath;
+      Button buttonBath = ViewBindings.findChildViewById(rootView, id);
+      if (buttonBath == null) {
         break missingId;
       }
 
@@ -108,7 +108,7 @@ public final class ActivityHomeBinding implements ViewBinding {
 
       FrameLayout homePage = (FrameLayout) rootView;
 
-      return new ActivityHomeBinding((FrameLayout) rootView, buttonBath, buttonLocation,
+      return new ActivityHomeBinding((FrameLayout) rootView, buttonAbout, buttonBath,
           buttonProducts, buttonProfile, buttonVacines, homePage);
     }
     String missingId = rootView.getResources().getResourceName(id);

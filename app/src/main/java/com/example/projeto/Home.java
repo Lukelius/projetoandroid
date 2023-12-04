@@ -12,6 +12,8 @@ public class Home extends AppCompatActivity {
     Button homeProfile;
     Button homeBath;
     Button homeVaccine;
+    Button homeAbout;
+    Button homeProducts;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,7 +47,22 @@ public class Home extends AppCompatActivity {
             }
         });
 
+        homeAbout = findViewById(R.id.buttonAbout);
+        homeAbout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this, AboutUs.class);
+                startActivity(intent);
+            }
+        });
 
-
+        homeProducts = findViewById(R.id.buttonProducts);
+        homeProducts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this, Products.class);
+                startActivity(intent);
+            }
+        });
     }
 }

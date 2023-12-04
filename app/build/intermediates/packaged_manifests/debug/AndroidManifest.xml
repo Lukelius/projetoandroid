@@ -41,6 +41,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.Projeto" >
         <activity
+            android:name="com.example.projeto.Products"
+            android:exported="false" />
+        <activity
+            android:name="com.example.projeto.AboutUs"
+            android:exported="false" />
+        <activity
             android:name="com.example.projeto.PetProfile"
             android:exported="false" />
         <activity

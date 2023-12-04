@@ -1368,6 +1368,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color blue
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -3088,6 +3089,7 @@ drawable perfil
 drawable perfilbanner
 drawable perfilbg
 drawable pet
+drawable racao
 drawable round_button
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -3105,9 +3107,11 @@ id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
+id Sobre
 id TOP_END
 id TOP_START
 id Vacina
+id aboutPage
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -3206,9 +3210,9 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id buttonAbout
 id buttonAgendarVacina
 id buttonBath
-id buttonLocation
 id buttonPanel
 id buttonProducts
 id buttonProfile
@@ -3249,6 +3253,9 @@ id compress
 id confirm_button
 id constraint
 id container
+id containerImg
+id containerImg2
+id containerImg3
 id content
 id contentPanel
 id contiguous
@@ -3269,6 +3276,9 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id descricao
+id descricao2
+id descricao3
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -3451,6 +3461,8 @@ id neverCompleteToStart
 id noScroll
 id noState
 id nome
+id nome2
+id nome3
 id nomePet
 id none
 id normal
@@ -3489,6 +3501,9 @@ id portePequeno
 id portes
 id position
 id postLayout
+id preco
+id preco2
+id preco3
 id pressed
 id profile
 id progress_circular
@@ -3653,6 +3668,9 @@ id vaccineTxT
 id vacina1
 id vazio
 id vertical_only
+id view
+id view2
+id view3
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -3786,6 +3804,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_about_us
 layout activity_agendamentos
 layout activity_bath_grooming
 layout activity_form_cadastro
@@ -3794,6 +3813,7 @@ layout activity_home
 layout activity_main
 layout activity_pet_profile
 layout activity_pet_register
+layout activity_products
 layout activity_profile
 layout activity_vaccine
 layout browser_actions_context_menu_page
@@ -3913,6 +3933,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string aboutUs
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -4083,6 +4104,7 @@ string tipoServico
 string tipoVacina
 string title_activity_localizacao
 string titulo_cadastro
+string welcome
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

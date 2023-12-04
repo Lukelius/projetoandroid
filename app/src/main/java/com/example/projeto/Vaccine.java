@@ -98,10 +98,10 @@ public class Vaccine extends AppCompatActivity {
         DatePickerDialog dialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-                agendaDiaVacina.setText("DATA: " + String.valueOf(day) + "/" + String.valueOf(month) + "/" + String.valueOf(year));
+                agendaDiaVacina.setText("DATA: " + String.valueOf(day) + "/" + String.valueOf(month+1) + "/" + String.valueOf(year));
 
             }
-        }, 2023, 11, 15);
+        }, 2023, 11, 04);
 
         dialog.show();
     }

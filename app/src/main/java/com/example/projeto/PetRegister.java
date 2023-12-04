@@ -191,7 +191,7 @@ public class PetRegister extends AppCompatActivity {
         DatePickerDialog dialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-                dataNascimento.setText("DATA: " + String.valueOf(day) + "/" + String.valueOf(month) + "/" + String.valueOf(year));
+                dataNascimento.setText("DATA: " + String.valueOf(day) + "/" + String.valueOf(month+1) + "/" + String.valueOf(year));
 
             }
         }, 2023, 11, 15);

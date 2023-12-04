@@ -10,6 +10,9 @@
     <string name="escolhaPet">Escolher o Pet</string>
     <string name="tipoServico">Tipo de Tosa</string>
     <string name="tipoVacina">Tipo de Vacina</string>
+    <string name="welcome"> Bem-vindo ao MacaPet!</string>
+    <string name="aboutUs">
+Somos apaixonados por animais e comprometidos em proporcionar a melhor experiência para você e seus adoráveis companheiros de quatro patas. No MacaPet, acreditamos que cada animal merece amor, cuidado e atenção especial.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
